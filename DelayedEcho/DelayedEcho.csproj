@@ -48,7 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DelayedEcho.MatthewParker.1.0.0.nupkg" />
+    <None Include="DelayedEcho.MP.AP.1.0.1.nupkg" />
     <None Include="DelayedEcho.nuspec">
       <SubType>Designer</SubType>
     </None>
