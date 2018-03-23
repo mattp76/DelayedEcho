@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DelayedEcho.MP.AP</id>
+    <version>1.0.1</version>
+    <title>DelayedEcho</title>
+    <authors>Matthew Parker</authors>
+    <owners>Matthew Parker</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DelayedEcho class library for Console App interaction</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>DelayedEcho</tags>
+	<dependencies>
+    <group targetFramework="uap">
+        <dependency id="NETFramework" version="4.5.2" />
+    </group>
+</dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\DelayedEcho.dll" target="lib\net4.5.2\DelayedEcho.dll" />
+    <file src="bin\Release\DelayedEcho.XML" target="lib\net4.5.2\DelayedEcho.XML" />
+    <file src="readme.txt" target="" />
+  </files>
+</package>

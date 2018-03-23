@@ -9,7 +9,7 @@ namespace DelayedEcho.Interfaces
     public interface IConcreteClass
     {
         event EventHandler<EchoEventArgs> EchoEvent;
-        Task EchoDelayed(string message, int delaySeconds);
-        Task DelayedOperation(string message, int delaySeconds);
+        void EchoDelayed(string message, int delaySeconds);
+        void DelayedOperation(string message, int delaySeconds);
     }
 }

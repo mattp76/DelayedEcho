@@ -13,15 +13,16 @@ namespace DelayedEcho
             EchoEvent.Invoke(this, e);
         }
 
-        public async Task EchoDelayed(string message, int delaySeconds)
+        public async void EchoDelayed(string message, int delaySeconds)
         {
+            // This method runs asynchronously.
             await Task.Run(() =>
             {
                 DelayedOperation(message, delaySeconds);
             });
         }
 
-        public async Task DelayedOperation(string message, int delaySeconds)
+        public async void DelayedOperation(string message, int delaySeconds)
         {
             TimeSpan interval = TimeSpan.FromSeconds(delaySeconds);
             Task task = Task.Delay(interval);
@@ -29,7 +30,7 @@ namespace DelayedEcho
             try
             {
                 await task;
-                OnRaiseProgressEvent(new EchoEventArgs(DateTime.Now, message));
+                OnRaiseProgressEvent(new EchoEventArgs(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"), message));
             }
             catch (TaskCanceledException)
             {
